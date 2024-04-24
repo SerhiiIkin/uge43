@@ -1,8 +1,13 @@
-import React from 'react'
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
 
-function MainLayout() {
+function MainLayout({ children }) {
   return (
-    <div>M</div>
+    <div className="min-h-screen flex flex-col ">
+      <Header/>
+      <main className="mb-auto">{children}</main>
+      <Footer/>
+    </div>
   )
 }
 

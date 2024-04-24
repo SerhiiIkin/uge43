@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "./counterSlice";
 
 export function Counter() {
-    const count = useSelector((state) => state.counter.value);
+    const {value} = useSelector((state) => state.counter);
     const dispatch = useDispatch();
 
     return (
@@ -15,7 +15,7 @@ export function Counter() {
                 >
                     Increment
                 </button>
-                <span className="mr-2">{count}</span>
+                <span className="mr-2">{value}</span>
                 <button
                     className="p-2 border border-red-400 rounded"
                     aria-label="Decrement value"
