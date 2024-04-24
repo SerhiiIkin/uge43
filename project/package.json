@@ -4,21 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "devH": "npx next dev -H 192.168.8.101 -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express-fileupload": "^1.5.0",
     "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.1",
     "next": "14.2.1",
     "nodemailer": "^6.9.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-redux": "^9.1.1",
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "@types/node": "20.12.7",
